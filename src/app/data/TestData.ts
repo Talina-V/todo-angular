@@ -21,7 +21,7 @@ export class TestData {
     static tasks: Task[] = [
         {
             id: 1,
-            title: 'Task 1',
+            title: 'Find a job: trainee Angular Developer',
             priority: TestData.priorities[2],
             comleted: false,
             category: TestData.categories[0],
