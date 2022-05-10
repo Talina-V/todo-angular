@@ -19,7 +19,7 @@ export class TestData {
     ];
 
     static tasks: Task[] = [
-        { 
+        {
             id: 1,
             title: 'Task 1',
             priority: TestData.priorities[2],
