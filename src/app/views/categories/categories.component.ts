@@ -11,6 +11,8 @@ export class CategoriesComponent implements OnInit {
 
   categories: Category[] = [];
 
+  selectedCategory!: Category;
+
   constructor(private dataHandler: DataHandlerService) { }
 
   ngOnInit(): void {
@@ -18,6 +20,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   showTasksByCategory(category: Category): void {
+    this.selectedCategory = category;
     this.dataHandler.fillTasksByCategory(category)
   }
 }
